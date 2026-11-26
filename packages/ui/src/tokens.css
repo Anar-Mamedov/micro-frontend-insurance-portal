@@ -1,0 +1,66 @@
+/*
+ * Design tokens. Every micro-frontend reads these CSS variables instead of hard-coding colours,
+ * so a theme change ships once from this package. The `--mfd-` prefix keeps them from colliding
+ * with variables defined by other teams or third-party widgets on the same page.
+ */
+:root {
+  --mfd-font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mfd-font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --mfd-bg: #f4f6fa;
+  --mfd-surface: #ffffff;
+  --mfd-surface-2: #eef1f7;
+  --mfd-text: #131a2c;
+  --mfd-text-muted: #556079;
+  --mfd-border: #dbe0ea;
+
+  --mfd-primary: #0b5cad;
+  --mfd-primary-hover: #094c90;
+  --mfd-primary-text: #ffffff;
+  --mfd-primary-soft: #e2edf9;
+
+  --mfd-success: #13773b;
+  --mfd-success-soft: #dcf4e4;
+  --mfd-warning: #8f5300;
+  --mfd-warning-soft: #fcefd3;
+  --mfd-danger: #b42323;
+  --mfd-danger-soft: #fde3e3;
+
+  --mfd-radius-sm: 6px;
+  --mfd-radius: 10px;
+  --mfd-radius-lg: 14px;
+
+  --mfd-space-1: 4px;
+  --mfd-space-2: 8px;
+  --mfd-space-3: 12px;
+  --mfd-space-4: 16px;
+  --mfd-space-5: 24px;
+  --mfd-space-6: 32px;
+
+  --mfd-shadow: 0 1px 2px rgb(15 23 42 / 6%), 0 4px 14px rgb(15 23 42 / 5%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mfd-bg: #0d111c;
+    --mfd-surface: #151b2b;
+    --mfd-surface-2: #1c2337;
+    --mfd-text: #e7eaf4;
+    --mfd-text-muted: #a3abc3;
+    --mfd-border: #2a3249;
+
+    --mfd-primary: #6ea8ff;
+    --mfd-primary-hover: #8cbaff;
+    --mfd-primary-text: #0d111c;
+    --mfd-primary-soft: #1b2a4a;
+
+    --mfd-success: #5ad48a;
+    --mfd-success-soft: #123222;
+    --mfd-warning: #f3bc4e;
+    --mfd-warning-soft: #33260a;
+    --mfd-danger: #ff8b8b;
+    --mfd-danger-soft: #3a1717;
+
+    --mfd-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+  }
+}

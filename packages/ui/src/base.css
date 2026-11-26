@@ -1,0 +1,37 @@
+/*
+ * Global base styles. Only the shell (or a remote running standalone) imports this file;
+ * exposed remote modules never do, so a remote cannot restyle the host page.
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--mfd-font);
+  font-size: 15px;
+  line-height: 1.5;
+  background: var(--mfd-bg);
+  color: var(--mfd-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--mfd-primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--mfd-primary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

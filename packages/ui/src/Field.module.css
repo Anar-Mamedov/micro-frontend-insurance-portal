@@ -1,0 +1,48 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mfd-space-1);
+  min-width: 0;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.control {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--mfd-border);
+  border-radius: var(--mfd-radius-sm);
+  background: var(--mfd-surface);
+  color: var(--mfd-text);
+  font: inherit;
+}
+
+.control:focus-visible {
+  outline: 2px solid var(--mfd-primary);
+  outline-offset: 0;
+  border-color: var(--mfd-primary);
+}
+
+.control[aria-invalid='true'] {
+  border-color: var(--mfd-danger);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 96px;
+}
+
+.hint {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--mfd-text-muted);
+}
+
+.error {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--mfd-danger);
+}
