@@ -1,0 +1,7 @@
+packages:
+  - apps/*
+  - packages/*
+
+# Supply-chain guard: a version published to npm is not installed until it is 7 days old
+# (value in minutes). Compromised releases are usually detected and pulled within days.
+minimumReleaseAge: 10080
