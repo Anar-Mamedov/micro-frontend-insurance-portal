@@ -1,0 +1,16 @@
+.frame {
+  min-height: 100vh;
+}
+
+.banner {
+  margin: 0;
+  padding: var(--mfd-space-3) var(--mfd-space-5);
+  background: var(--mfd-warning-soft);
+  font-size: 0.85rem;
+}
+
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--mfd-space-6) var(--mfd-space-5);
+}
