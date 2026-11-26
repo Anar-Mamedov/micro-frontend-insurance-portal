@@ -1,0 +1,17 @@
+.details {
+  margin-top: var(--mfd-space-2);
+  font-size: 0.8rem;
+  color: var(--mfd-text-muted);
+}
+
+.details summary {
+  cursor: pointer;
+}
+
+.details code {
+  display: block;
+  margin-top: var(--mfd-space-1);
+  font-family: var(--mfd-font-mono);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
